@@ -1,0 +1,41 @@
+{
+  "name": "tweetapp",
+  "version": "1.0.0",
+  "description": "Sample twitter stream",
+  "main": "app.js",
+  "scripts": {
+    "browserify": "browserify app.js -o public/js/bundle.js",
+    "build": "npm run browserify",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Guru107/react-tweet.git"
+  },
+  "keywords": [
+    "nodejs",
+    "reactjs",
+    "express"
+  ],
+  "author": "Gurudatt",
+  "license": "Free!!",
+  "bugs": {
+    "url": "https://github.com/Guru107/react-tweet/issues"
+  },
+  "homepage": "https://github.com/Guru107/react-tweet",
+  "dependencies": {
+    "browserify": "^9.0.7",
+    "express": "^4.12.3",
+    "express-handlebars": "^2.0.0",
+    "node-jsx": "^0.12.4",
+    "nodemon": "^1.3.7",
+    "react": "^0.13.1",
+    "reactify": "^1.1.0",
+    "twitter": "^1.2.5"
+  },
+   "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
